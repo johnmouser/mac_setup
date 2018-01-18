@@ -21,7 +21,7 @@ sudo easy_install pip
 # install ansible
 sudo pip install ansible
 
-# switch to mac_setup directory
+# cwd to mac_setup directory
 cd ~/Repos/mac_setup/
 
 # execute ansible playbook

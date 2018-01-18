@@ -1,5 +1,5 @@
 ---
-- name: Check for OSX
+- name: Check for MacOSX
   fail:
     msg: Host is not a Mac.
   when: ansible_distribution != 'MacOSX'

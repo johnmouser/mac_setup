@@ -1,5 +1,5 @@
 ---
-- name: local setup
+- name: setup localhost
   hosts: localhost
   connection: local
   vars_files:
