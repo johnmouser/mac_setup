@@ -9,12 +9,12 @@ defaults:
   - defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # empty trash securely
   - defaults write com.apple.finder EmptyTrashSecurely -bool true
+# disable empty trash warning
+  - defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # show hidden files
   - defaults write com.apple.finder AppleShowAllFiles -bool true
 # show file extensions
   - defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-# disable empty trash warning
-  - defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # set dock size
   - defaults write com.apple.dock tilesize -int 50
 # set dock magnification
@@ -25,3 +25,5 @@ defaults:
   - defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # disable smart dashes
   - defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+# enable firewall
+  - defaults write /Library/Preferences/com.apple.alf globalstate -int 1
