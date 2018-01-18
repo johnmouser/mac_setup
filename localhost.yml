@@ -3,8 +3,8 @@
   hosts: localhost
   connection: local
   vars_files:
-    - vars/homebrew.yml
-    - vars/defaults.yml
+    - roles/homebrew/vars/homebrew.yml
+    - roles/defaults/vars/defaults.yml
   roles:
     - validation
     - homebrew
