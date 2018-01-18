@@ -1,0 +1,4 @@
+---
+- name: configure mac defaults
+  shell: "{{ item }}"
+  with_items: "{{ defaults }}"

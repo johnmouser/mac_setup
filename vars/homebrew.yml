@@ -1,0 +1,22 @@
+---
+homebrew_packages:
+  - docker
+  - kubectl
+  - bash-completion
+  - bash-git-prompt
+  - kubernetes-cli
+  - telnet
+
+homebrew_cask_apps:
+  - google-chrome
+  - royal-tsx
+  - slack
+  - iterm2
+  - visual-studio-code
+  - evernote
+  - virtualbox
+  - vagrant
+  - vagrant-manager
+  - minikube
+  - spotify
+  - wireshark

@@ -1,0 +1,13 @@
+---
+- name: local setup
+  hosts: localhost
+  connection: local
+  vars_files:
+    - vars/homebrew.yml
+    - vars/defaults.yml
+  roles:
+    - validation
+    - homebrew
+    - dotfiles
+    - configs
+    - defaults

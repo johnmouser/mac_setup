@@ -1,0 +1,7 @@
+---
+- name: install homebrew cask apps
+  homebrew_cask:
+    name: "{{ item }}"
+    state: present
+    update_homebrew: yes
+  with_items: "{{ homebrew_cask_apps }}"

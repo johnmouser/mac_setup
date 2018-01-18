@@ -1,0 +1,5 @@
+---
+- name: copy bash-git-prompt theme
+  copy:
+    src: Chaos.bgptheme
+    dest: /usr/local/Cellar/bash-git-prompt/2.7.1/share/themes/

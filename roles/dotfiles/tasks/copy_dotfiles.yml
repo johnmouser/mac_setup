@@ -1,0 +1,10 @@
+---
+- name: copy .bash_profile
+  copy:
+    src: .bash_profile
+    dest: ~/
+
+- name: copy .vimrc
+  copy:
+    src: .vimrc
+    dest: ~/
