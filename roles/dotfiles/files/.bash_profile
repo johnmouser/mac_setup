@@ -1,8 +1,7 @@
-# Exports
-export CLICOLOR=1
+# Exports export CLICOLOR=1
 export TERM=xterm-256color
 
-# Aliases
+# Aliases'
 alias ll="ls -lahtG"
 alias ls="ls -G"
 alias gg="git status -s"
@@ -17,16 +16,14 @@ alias reload="source ~/.bash_profile"
 alias rpass="env LC_CTYPE=C tr -dc 'a-zA-Z0-9-!@#$%&*_+.=' < /dev/urandom | head -c 20 ; echo"
 alias web="python -m SimpleHTTPServer 8000"
 alias lock="/System/Library/CoreServices/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine"
-alias cisco="screen /dev/tty.usbserial"
+alias cisco="screen /dev/cu.usbserial-A907FLDE"
 alias bgp="vi /usr/local/Cellar/bash-git-prompt/2.7.1/share/themes/Chaos.bgptheme"
 
 # Git Prompt
-GIT_PROMPT_THEME=Chaos
-
-if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
-  __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
-  source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
-fi
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 
 # Functions
 extract () {
@@ -48,3 +45,17 @@ extract () {
          echo "'$1' is not a valid file"
     fi
 }
+
+function change_color() {
+  NAME=$1; if [ -z "$NAME" ]; then NAME="Default"; fi
+  echo -e "\033]50;SetProfile=$NAME\a"
+}
+
+function colorssh() {
+  change_color ssh_prod
+  ssh $*
+  change_color
+}
+
+alias sshp="colorssh"
+
