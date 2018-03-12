@@ -6,6 +6,7 @@ homebrew_packages:
   - bash-git-prompt
   - kubernetes-cli
   - telnet
+  - packer
 
 homebrew_cask_apps:
   - google-chrome
