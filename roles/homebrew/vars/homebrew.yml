@@ -3,7 +3,6 @@ homebrew_packages:
   - docker
   - kubectl
   - bash-completion
-  - bash-git-prompt
   - kubernetes-cli
   - telnet
   - packer

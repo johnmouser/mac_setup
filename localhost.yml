@@ -4,7 +4,6 @@
   connection: local
   vars_files:
     - roles/homebrew/vars/homebrew.yml
-    - roles/defaults/vars/defaults.yml
   roles:
     - validation
     - homebrew
