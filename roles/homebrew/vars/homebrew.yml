@@ -1,9 +1,6 @@
 ---
 homebrew_packages:
   - docker
-  - kubectl
-  - bash-completion
-  - kubernetes-cli
   - telnet
   - packer
 
@@ -17,6 +14,6 @@ homebrew_cask_apps:
   - virtualbox
   - vagrant
   - vagrant-manager
-  - minikube
   - spotify
   - wireshark
+  - parallels
