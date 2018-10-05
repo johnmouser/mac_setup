@@ -45,17 +45,3 @@ extract () {
          echo "'$1' is not a valid file"
     fi
 }
-
-function change_color() {
-  NAME=$1; if [ -z "$NAME" ]; then NAME="Default"; fi
-  echo -e "\033]50;SetProfile=$NAME\a"
-}
-
-function colorssh() {
-  change_color ssh_prod
-  ssh $*
-  change_color
-}
-
-alias sshp="colorssh"
-
