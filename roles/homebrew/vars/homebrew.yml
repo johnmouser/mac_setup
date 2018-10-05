@@ -1,13 +1,12 @@
 ---
 homebrew_packages:
-  - docker
   - telnet
   - packer
+  - terraform
 
 homebrew_cask_apps:
   - google-chrome
   - royal-tsx
-  - slack
   - iterm2
   - visual-studio-code
   - evernote
@@ -17,3 +16,5 @@ homebrew_cask_apps:
   - spotify
   - wireshark
   - parallels
+  - angry-ip-scanner
+  - parallels-desktop
