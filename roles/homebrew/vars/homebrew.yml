@@ -15,6 +15,5 @@ homebrew_cask_apps:
   - vagrant-manager
   - spotify
   - wireshark
-  - parallels
   - angry-ip-scanner
   - parallels-desktop
