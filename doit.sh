@@ -10,7 +10,7 @@
 brew install git
 
 # make repo directory
-mkdir ~/Repos
+mkdir ~/repos
 
 # clone mac_setup repo
 git clone https://github.com/johnmouser/mac_setup.git Repos/mac_setup
@@ -22,7 +22,7 @@ sudo easy_install pip
 sudo pip install ansible
 
 # cwd to mac_setup directory
-cd ~/Repos/mac_setup/
+cd ~/repos/mac_setup/
 
 # execute ansible playbook
 ansible-playbook site.yml
