@@ -13,7 +13,7 @@ brew install git
 mkdir ~/repos
 
 # clone mac_setup repo
-git clone https://github.com/johnmouser/mac_setup.git Repos/mac_setup
+git clone https://github.com/johnmouser/mac_setup.git repos/mac_setup
 
 # install pip
 sudo easy_install pip
