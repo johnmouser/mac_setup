@@ -5,7 +5,10 @@ homebrew_packages:
   - terraform
 
 homebrew_cask_apps:
+  - skype-for-business
+  - keepassxc
   - google-chrome
+  - firefox
   - royal-tsx
   - iterm2
   - visual-studio-code
@@ -17,3 +20,4 @@ homebrew_cask_apps:
   - wireshark
   - angry-ip-scanner
   - parallels-desktop
+  - slack
