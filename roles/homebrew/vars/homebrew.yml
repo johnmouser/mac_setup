@@ -7,7 +7,7 @@ homebrew_packages:
   - terraform
 
 homebrew_cask_apps:
-  - skype-for-business
+  - microsoft-teams
   - keepassxc
   - google-chrome
   - firefox
