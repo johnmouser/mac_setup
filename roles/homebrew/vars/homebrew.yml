@@ -8,6 +8,7 @@ homebrew_packages:
 
 homebrew_cask_apps:
   - microsoft-teams
+  - skype-for-business
   - keepassxc
   - google-chrome
   - firefox
