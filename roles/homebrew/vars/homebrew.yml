@@ -5,6 +5,7 @@ homebrew_packages:
   - telnet
   - packer
   - terraform
+  - azure-cli
 
 homebrew_cask_apps:
   - microsoft-teams
